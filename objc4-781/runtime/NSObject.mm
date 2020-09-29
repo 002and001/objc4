@@ -2318,7 +2318,7 @@ __attribute__((objc_nonlazy_class))
 }
 
 + (id)alloc {
-    printf("alloc,self is %p\n",self);
+    print_D("self is %p\n",self);
     return _objc_rootAlloc(self);
 }
 

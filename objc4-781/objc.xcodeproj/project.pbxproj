@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25129055252324D400B6C7E6 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 25129054252324D400B6C7E6 /* Shared.h */; };
 		259CCD9C2521DDC800BEA8A2 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 259CCD872521DDC800BEA8A2 /* CrashReporterClient.h */; };
 		259CCD9D2521DDC800BEA8A2 /* restartable.h in Headers */ = {isa = PBXBuildFile; fileRef = 259CCD892521DDC800BEA8A2 /* restartable.h */; };
 		259CCD9E2521DDC800BEA8A2 /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 259CCD8A2521DDC800BEA8A2 /* Block_private.h */; };
@@ -155,6 +156,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		25129054252324D400B6C7E6 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		259CCD872521DDC800BEA8A2 /* CrashReporterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
 		259CCD892521DDC800BEA8A2 /* restartable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = restartable.h; sourceTree = "<group>"; };
 		259CCD8A2521DDC800BEA8A2 /* Block_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block_private.h; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				25129054252324D400B6C7E6 /* Shared.h */,
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
 				259CCD862521DDC800BEA8A2 /* common */,
 				838485C60D6D687700CEA253 /* Public Headers */,
@@ -646,6 +649,7 @@
 				83BE02EA0FCCB24D00661494 /* objc-runtime-old.h in Headers */,
 				8384860A0D6D68A200CEA253 /* objc-runtime.h in Headers */,
 				8384860C0D6D68A200CEA253 /* objc-sel-set.h in Headers */,
+				25129055252324D400B6C7E6 /* Shared.h in Headers */,
 				259CCD9C2521DDC800BEA8A2 /* CrashReporterClient.h in Headers */,
 				6E7B0862232DE7CA00689009 /* PointerUnion.h in Headers */,
 				7213C36321FA7C730090A271 /* NSObject-internal.h in Headers */,
@@ -896,6 +900,7 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = Shared.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"OS_OBJECT_USE_OBJC=0",
 					"OBJC_IS_DEBUG_BUILD=1",
@@ -981,6 +986,7 @@
 				DYLIB_CURRENT_VERSION = 228;
 				EXECUTABLE_PREFIX = lib;
 				GCC_CW_ASM_SYNTAX = NO;
+				GCC_PREFIX_HEADER = Shared.h;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(DSTROOT)/usr/include/**",
