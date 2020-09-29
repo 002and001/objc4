@@ -312,7 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
-				259CCD862521DDC800BEA8A2 /* Common */,
+				259CCD862521DDC800BEA8A2 /* common */,
 				838485C60D6D687700CEA253 /* Public Headers */,
 				838485C70D6D688200CEA253 /* Private Headers */,
 				8384862A0D6D6ABC00CEA253 /* Project Headers */,
@@ -389,7 +389,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		259CCD862521DDC800BEA8A2 /* Common */ = {
+		259CCD862521DDC800BEA8A2 /* common */ = {
 			isa = PBXGroup;
 			children = (
 				259CCD872521DDC800BEA8A2 /* CrashReporterClient.h */,
@@ -403,7 +403,7 @@
 				259CCD992521DDC800BEA8A2 /* objc-shared-cache.h */,
 				259CCD9A2521DDC800BEA8A2 /* mach-o */,
 			);
-			path = Common;
+			path = common;
 			sourceTree = "<group>";
 		};
 		259CCD882521DDC800BEA8A2 /* kern */ = {
@@ -908,7 +908,7 @@
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
-					"$(SRCROOT)/Common",
+					"$(SRCROOT)/common",
 				);
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
@@ -988,7 +988,7 @@
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
-					"$(SRCROOT)/Common",
+					"$(SRCROOT)/common",
 				);
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
